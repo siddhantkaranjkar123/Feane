@@ -3,12 +3,11 @@ name: Deploy Website to EC2
 on:
   push:
     branches:
-      - main   # trigger on push to main branch
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
